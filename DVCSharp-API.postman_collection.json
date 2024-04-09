@@ -42,7 +42,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdEB0ZXN0LmNvbSIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNTYzNjAzMjg0LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0LmxvY2FsLyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3QubG9jYWwvIn0.gwmVBsF54alL4FiS7H-7yFEKqjoDHmwH_526BbFgP8k"
+						"value": "Bearer {{token}}"
 					}
 				],
 				"url": {
@@ -67,7 +67,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdEB0ZXN0LmNvbSIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNTI2MzgwMzYxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0LmxvY2FsLyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3QubG9jYWwvIn0.5ZejCtXrq2vZJJQQxQn2GJ9aeZ2OEi8wuuia6fAAR1Q"
+						"value": "Bearer {{token}}"
 					},
 					{
 						"key": "Content-Type",
@@ -101,7 +101,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdEB0ZXN0LmNvbSIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNTI2Mjg3MTMxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0LmxvY2FsLyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3QubG9jYWwvIn0.5OOoWWZU26AmHlKOVgbhsQBoJVHQ0h_a0Eli6gfx5jM"
+						"value": "Bearer {{token}}"
 					}
 				],
 				"url": {
@@ -133,7 +133,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdEB0ZXN0LmNvbSIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNTI2MzgwMzYxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0LmxvY2FsLyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3QubG9jYWwvIn0.5ZejCtXrq2vZJJQQxQn2GJ9aeZ2OEi8wuuia6fAAR1Q"
+						"value": "Bearer {{token}}"
 					}
 				],
 				"url": {
@@ -156,7 +156,12 @@
 			"name": "Delete User",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{admin_token}}"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:5000/api/users/1",
 					"protocol": "http",
@@ -453,16 +458,6 @@
 			"response": []
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": [
-			{
-				"key": "token",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdDFAdGVzdC5jb20iLCJyb2xlIjoiVXNlciIsImV4cCI6MTU2NDA2NDgyNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC5sb2NhbC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmxvY2FsLyJ9.CblEHNbmxUYVgZhGRkon6GC4julL7WtZtKF-yIRMh1A",
-				"type": "string"
-			}
-		]
-	},
 	"event": [
 		{
 			"listen": "prerequest",

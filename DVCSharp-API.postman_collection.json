@@ -105,7 +105,7 @@
 					}
 				],
 				"url": {
-					"raw": "http:/localhost:5000/api/users/import?url=http://ifconfig.co",
+					"raw": "http://localhost:5000/api/users/import?url=http://ifconfig.co",
 					"host": [
 						"http:"
 					],

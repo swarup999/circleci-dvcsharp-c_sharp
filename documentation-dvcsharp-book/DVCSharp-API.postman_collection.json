@@ -350,6 +350,12 @@
 						"api",
 						"products",
 						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "test"
+						}
 					]
 				}
 			},

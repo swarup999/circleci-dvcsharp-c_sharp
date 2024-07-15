@@ -18,4 +18,4 @@ jobs:
           cx_client_id: ${{ secrets.CANARY_OATH }}
           cx_client_secret: ${{ secrets.CANARY_SECRET }}
           ## additional_params: --apikey ${{ secrets.API_KEY }}
-          ##additional_params: --threshold sast-high=1
+          additional_params: --async
